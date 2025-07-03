@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>South East Central Railway - Bilaspur Division</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f5f5dc;
+      color: #1a1a1a;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      background: #fff;
+      border: 2px solid #000;
+      padding: 20px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      height: 100px;
+    }
+
+    .title-row {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #003087;
+      margin: 5px 0;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      color: #00b7eb;
+      margin: 5px 0;
+    }
+
+    .dept-title {
+      font-size: 18px;
+      color: #fff;
+      background: #00b7eb;
+      padding: 8px 15px;
+      display: inline-block;
+      border-radius: 10px;
+    }
+
+    .main-title {
+      font-size: 24px;
+      color: #fff;
+      background: #003087;
+      padding: 10px 20px;
+      border-radius: 10px;
+      margin: 10px 0;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .button-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s, background 0.3s;
+      text-align: center;
+    }
+
+    .button:hover {
+      transform: scale(1.05);
+    }
+
+    .button-green { background: #4caf50; }
+    .button-green:hover { background: #45a049; }
+
+    .button-darkgreen { background: #388e3c; }
+    .button-darkgreen:hover { background: #2e7d32; }
+
+    .button-yellow { background: #ffca28; color: #333; }
+    .button-yellow:hover { background: #ffb300; }
+
+    .button-purple { background: #ab47bc; }
+    .button-purple:hover { background: #8e24aa; }
+
+    .button-red { background: #f44336; }
+    .button-red:hover { background: #da190b; }
+
+    .button-blue { background: #2196f3; }
+    .button-blue:hover { background: #1976d2; }
+
+    .train-image {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 20px;
+      border: 2px solid #000;
+    }
+
+    @media screen and (max-width: 1024px) {
+      .button-row {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .title { font-size: 20px; }
+      .subtitle { font-size: 16px; }
+      .dept-title { font-size: 16px; }
+      .main-title { font-size: 18px; }
+      .button { font-size: 14px; padding: 12px 15px; }
+      .button-row { grid-template-columns: 1fr; }
+      .train-image { max-width: 100%; }
+    }
+
+    @media screen and (max-width: 480px) {
+      .title { font-size: 18px; }
+      .subtitle { font-size: 14px; }
+      .dept-title { font-size: 14px; }
+      .main-title { font-size: 16px; }
+      .button { font-size: 12px; padding: 10px 12px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="railway logo.png" alt="Indian Railways Logo" class="logo">
+      <div class="title-row">
+        <div class="title">SOUTH EAST CENTRAL RAILWAY</div>
+        <div class="title">BILASPUR DIVISION</div>
+        <div class="dept-title">ELECTRICAL(OP) DEPARTMENT, BILASPUR</div>
+      </div>
+    </div>
+    <div class="main-title">संयुक्त चलक दल एवं ट्रेन मैनेजर लॉबी, शहडोल</div>
+    <div class="button-row">
+      <a href="stationlayoutbspjlw.html" class="button button-green">BILASPUR-JHALWARA STATION YARD LAYOUT</a>
+      <a href="stationlayoutaprabkp.html" class="button button-darkgreen">ANUPPUR-AMBIKAPUR STATION YARD LAYOUT</a>
+      <a href="yardvideo.html" class="button button-yellow">YARD LAYOUT VIDEO</a>
+      <a href="https://drive.google.com/file/d/1Yf8UNlWlFMj9w15YSg03yKTOg8Jrc9xR/view?usp=drive_link" class="button button-purple">SPAD CASE STUDY</a>
+      <a href="https://drive.google.com/file/d/1lJ-4as6WINhNAfy-96fxE1sit6bSMtKF/view?usp=drive_link" class="button button-purple">GRADIENT AND SIGNAL LOCATION BOOKLET</a>
+      <a href="https://drive.google.com/file/d/1AyvAjlZ7XH-VK75r_rhK9vhdWB_SFiQR/view?usp=drive_link" class="button button-red">RIGHT HAND SIGNAL LOCATIONS</a>
+      <a href="https://srdeeopbsp.github.io/AUTO/" class="button button-blue">AUTOMATIC BLOCK SIGNAL QUIZ</a>
+    </div>
+    <img src="SDL.png" alt="Train Image" class="train-image">
+  </div>
+</body>
+</html>

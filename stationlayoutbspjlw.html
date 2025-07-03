@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BSP-JLW YARD LAYOUT</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    .header {
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: #fff;
+      padding: 20px;
+      font-size: 28px;
+      font-weight: 700;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .back-button {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      background: #ff6f61;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 25px;
+      transition: background 0.3s ease, transform 0.2s ease;
+      font-size: 16px;
+    }
+
+    .back-button:hover {
+      background: #ff3d2e;
+      transform: translateY(-50%) scale(1.05);
+    }
+
+    .instruction {
+      background: #ffffff;
+      color: #e91e63;
+      font-size: 22px;
+      font-weight: 600;
+      margin: 20px auto;
+      padding: 15px 25px;
+      width: fit-content;
+      max-width: 90%;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .button-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+      padding: 30px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .station-button {
+      background: linear-gradient(45deg, #00c4b4, #0288d1);
+      color: #fff;
+      padding: 15px;
+      font-size: 18px;
+      font-weight: 600;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .station-button:hover {
+      background: linear-gradient(45deg, #0288d1, #00c4b4);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .station-button::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 300%;
+      height: 300%;
+      background: rgba(255, 255, 255, 0.15);
+      transform: translate(-50%, -50%) rotate(45deg);
+      transition: all 0.5s;
+      opacity: 0;
+    }
+
+    .station-button:hover::before {
+      opacity: 1;
+      width: 0;
+      height: 0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media screen and (max-width: 768px) {
+      .header {
+        font-size: 24px;
+        padding: 15px;
+      }
+
+      .back-button {
+        position: static;
+        transform: none;
+        margin: 10px auto 0;
+        display: block;
+        text-align: center;
+        width: fit-content;
+      }
+
+      .instruction {
+        font-size: 18px;
+        padding: 12px 20px;
+      }
+
+      .button-container {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 15px;
+        padding: 20px;
+      }
+
+      .station-button {
+        font-size: 16px;
+        padding: 12px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .header {
+        font-size: 20px;
+      }
+
+      .instruction {
+        font-size: 16px;
+      }
+
+      .station-button {
+        font-size: 14px;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    BSP-JLW YARD LAYOUT
+    <a href="index.html" class="back-button">BACK TO HOME PAGE</a>
+  </div>
+
+  <div class="instruction">
+    आप जिस स्टेशन या यार्ड का ड्राइंग देखना चाहते हैं उस पर क्लिक करें
+  </div>
+
+  <div class="button-container">
+    <a href="https://drive.google.com/file/d/1Cbae69wMeUT0zfY2CeyCvhmeblIsIEGn/view?usp=drive_link" class="station-button">BILASPUR</a>
+    <a href="https://drive.google.com/file/d/1ZZmtcWb66F0AtTZ1zGV7dBZumXrlsDKA/view?usp=drive_link" class="station-button">USLAPUR</a>
+    <a href="https://drive.google.com/file/d/1ylfXHpClQw_PM0aolVsEQ5WXEhrajZUW/view?usp=drive_link" class="station-button">GHUTKU</a>
+    <a href="https://drive.google.com/file/d/1uEfqy29LlFa_NW2MTXRlNkegt75L3KFo/view?usp=drive_link" class="station-button">KALMITAR</a>
+    <a href="https://drive.google.com/file/d/1sZYQthdOW1FOXtInBRIyaue62x8lz-nu/view?usp=drive_link" class="station-button">KARGI ROAD</a>
+    <a href="https://drive.google.com/file/d/1ZKf0MRmw9g8YmcQ_FpG-NHoYquZMYeW0/view?usp=drive_link" class="station-button">SALKA ROAD</a>
+    <a href="https://drive.google.com/file/d/1E484Yqd9Va_A7VHXJoJwt0zte1bfGj4k/view?usp=drive_link" class="station-button">BELGHANA</a>
+    <a href="https://drive.google.com/file/d/1NmNIHskFmnRmqE0uy6qzsER8ZFIWmxoO/view?usp=drive_link" class="station-button">TENGANMADA</a>
+    <a href="https://drive.google.com/file/d/1n-rheuvUhetVE0-XWfVC1Ka0MgeIbqby/view?usp=drive_link" class="station-button">KHONGSARA</a>
+    <a href="https://drive.google.com/file/d/1-RZC-h8bluh40CD2sPtbzdskenOlD2g2/view?usp=drive_link" class="station-button">BHANWARTAUNK</a>
+    <a href="https://drive.google.com/file/d/1lLckXmj_BUpTN_JxpX3mXiHipF2CC-xc/view?usp=drive_link" class="station-button">KHODRI</a>
+    <a href="https://drive.google.com/file/d/1mVMdBwXp141zSGMeB14shF6D9VMb_-3_/view?usp=drive_link" class="station-button">SARBHARA</a>
+    <a href="https://drive.google.com/file/d/1xtHPHGwObB7diTq-k2DFNljTPGRgoes7/view?usp=drive_link" class="station-button">PENDRA</a>
+    <a href="https://drive.google.com/file/d/1-GSjhdSKUzWR2_NDW6AfT3LHGQWmDgOA/view?usp=drive_link" class="station-button">HARRI</a>
+    <a href="https://drive.google.com/file/d/1xcxwIOAb49liVd6mIT4e3n5Lgk-QuaIV/view?usp=drive_link" class="station-button">VENKATNAGAR</a>
+    <a href="https://drive.google.com/file/d/17wL5d0U1akePMwM6LsGOa5q3Vsko6KmX/view?usp=drive_link" class="station-button">NIGAURA</a>
+    <a href="https://drive.google.com/file/d/15cXrWyoyDgwKZzMT8_z8wmH1igT1Wb3U/view?usp=drive_link" class="station-button">JAITHARI</a>
+    <a href="https://drive.google.com/file/d/1Oz4gKBpFcdnll5JyfhVeX4jeVRLYCVnY/view?usp=drive_link" class="station-button">CHULHA</a>
+    <a href="https://drive.google.com/file/d/1s2FyhbFVo0R02v0dUcH9Vw5cX6V-CaOX/view?usp=drive_link" class="station-button">ANUPPUR</a>
+    <a href="https://drive.google.com/file/d/10ZMhg5IK1lyJS8YT2IGIDBxsWEnWFUT1/view?usp=drive_link" class="station-button">AMLAI</a>
+    <a href="https://drive.google.com/file/d/1cQQexlPQDPd91jCYMrnsSvXM2H6O2miw/view?usp=drive_link" class="station-button">BURHAR</a>
+    <a href="https://drive.google.com/file/d/11xm3EZDMXYj5ph4RmW3aQFFABPxbenGF/view?usp=drive_link" class="station-button">SINGHPUR</a>
+    <a href="https://drive.google.com/file/d/1-7pcupqXYuLi5YQFF7fsnlhnXuDa28ca/view?usp=drive_link" class="station-button">SHAHDOL</a>
+    <a href="https://drive.google.com/file/d/1S1T2B_0XBQUYpbPRvvchUNL62jGbfGSu/view?usp=drive_link" class="station-button">BADHWAPARA</a>
+    <a href="https://drive.google.com/file/d/1YxMMjpxpwiWXSyM4PCQ4W2_OCM6QLvsQ/view?usp=drive_link" class="station-button">GHUNGHUTI</a>
+    <a href="https://drive.google.com/file/d/1MPJGGJVAL52ZlpVLhgfB0lo3o6va7kAW/view?usp=drive_link" class="station-button">MUDARIA</a>
+    <a href="https://drive.google.com/file/d/1ElsHWQf5w__8GZKPZrTp81c6uuKceWUG/view?usp=drive_link" class="station-button">BIRSINGHPUR</a>
+    <a href="https://drive.google.com/file/d/104gWOAXL7qBdD2ovl_2b8N9FPQe73jod/view?usp=drive_link" class="station-button">NOWROZABAD</a>
+    <a href="https://drive.google.com/file/d/1roWRuee_2lxoPbOZ4_w5xcw4KO-iOWpo/view?usp=drive_link" class="station-button">KARKELI</a>
+    <a href="https://drive.google.com/file/d/1SSiByX6dWCre-NTAnFUMcPCU-29ZFj2m/view?usp=drive_link" class="station-button">UMARIA</a>
+    <a href="https://drive.google.com/file/d/1zgZ-jhcRuVLQETbuJzvVPdq_2WYEs5nH/view?usp=drive_link" class="station-button">LOHRA</a>
+    <a href="https://drive.google.com/file/d/1XMlIWGLDCgzcuUttMouHlCbUoLHYwZgp/view?usp=drive_link" class="station-button">CHANDIA</a>
+    <a href="https://drive.google.com/file/d/1KaPWMVzStG1pwHMRMqIMOComPhUh20pm/view?usp=drive_link" class="station-button">VILAYAT</a>
+    <a href="https://drive.google.com/file/d/1uRGZbg52_fpRCYrQ8ylQXVU52w76xETw/view?usp=drive_link" class="station-button">RUPAUND</a>
+    <a href="https://drive.google.com/file/d/1MNx6v4bl_ptGf9N2VJAjAjMc2UyF5EiR/view?usp=drive_link" class="station-button">JHALWARA</a>
+  </div>
+</body>
+</html>

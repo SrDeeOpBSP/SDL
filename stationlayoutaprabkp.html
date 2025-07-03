@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APR-ABKP YARD LAYOUT</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    .header {
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: #fff;
+      padding: 20px;
+      font-size: 28px;
+      font-weight: 700;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .back-button {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      background: #ff6f61;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 25px;
+      transition: background 0.3s ease, transform 0.2s ease;
+      font-size: 16px;
+    }
+
+    .back-button:hover {
+      background: #ff3d2e;
+      transform: translateY(-50%) scale(1.05);
+    }
+
+    .instruction {
+      background: #ffffff;
+      color: #e91e63;
+      font-size: 22px;
+      font-weight: 600;
+      margin: 20px auto;
+      padding: 15px 25px;
+      width: fit-content;
+      max-width: 90%;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .button-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+      padding: 30px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .station-button {
+      background: linear-gradient(45deg, #00c4b4, #0288d1);
+      color: #fff;
+      padding: 15px;
+      font-size: 18px;
+      font-weight: 600;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .station-button:hover {
+      background: linear-gradient(45deg, #0288d1, #00c4b4);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .station-button::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 300%;
+      height: 300%;
+      background: rgba(255, 255, 255, 0.15);
+      transform: translate(-50%, -50%) rotate(45deg);
+      transition: all 0.5s;
+      opacity: 0;
+    }
+
+    .station-button:hover::before {
+      opacity: 1;
+      width: 0;
+      height: 0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media screen and (max-width: 768px) {
+      .header {
+        font-size: 24px;
+        padding: 15px;
+      }
+
+      .back-button {
+        position: static;
+        transform: none;
+        margin: 10px auto 0;
+        display: block;
+        text-align: center;
+        width: fit-content;
+      }
+
+      .instruction {
+        font-size: 18px;
+        padding: 12px 20px;
+      }
+
+      .button-container {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 15px;
+        padding: 20px;
+      }
+
+      .station-button {
+        font-size: 16px;
+        padding: 12px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .header {
+        font-size: 20px;
+      }
+
+      .instruction {
+        font-size: 16px;
+      }
+
+      .station-button {
+        font-size: 14px;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    BSP-JLW YARD LAYOUT
+    <a href="index.html" class="back-button">BACK TO HOME PAGE</a>
+  </div>
+
+  <div class="instruction">
+    आप जिस स्टेशन या यार्ड का ड्राइंग देखना चाहते हैं उस पर क्लिक करें
+  </div>
+
+  <div class="button-container">
+    <a href="https://drive.google.com/file/d/1s2FyhbFVo0R02v0dUcH9Vw5cX6V-CaOX/view?usp=drive_link" class="station-button">ANUPPUR</a>
+    <a href="https://drive.google.com/file/d/1evKc4pwvIGh0izyOsZDpkYPaSuncW7PJ/view?usp=drive_link" class="station-button">MAUHARI</a>
+    <a href="https://drive.google.com/file/d/1lgln7S6bPtz3PQJW8wFpTZSKO3vCqHjL/view?usp=drive_link" class="station-button">HARAD</a>
+    <a href="https://drive.google.com/file/d/1-c8MkhO0bSeaqmOVse_3m9_sSw1FINGd/view?usp=drive_link" class="station-button">KOTMA</a>
+    <a href="https://drive.google.com/file/d/1UxtFIOiHN_T8ctZQwUYMgJcOkSouAyHy/view?usp=drive_link" class="station-button">BAIHATOLA</a>
+    <a href="https://drive.google.com/file/d/1tQfPzU_3Lg_RrFs6daKUpVu27cyeJ50_/view?usp=drive_link" class="station-button">BIJURI</a>
+    <a href="https://drive.google.com/file/d/1JzAk8uoHT5EFJx-2vF0C4_C-nFbjokDZ/view?usp=drive_link" class="station-button">BORIDAND</a>
+    <a href="https://drive.google.com/file/d/1NbHTAnxtK4V1X2B3mGUNNkd2g6dFMk1s/view?usp=drive_link" class="station-button">UDALKACHHAR</a>
+    <a href="https://drive.google.com/file/d/1buQgSYZJIAiD3wqXi_J_GaiiPoFDZWeA/view?usp=drive_link" class="station-button">DARRITOLA</a>
+    <a href="https://drive.google.com/file/d/1mGpXGv8imsBP-euOrQesgZaOvs_Pl3Hg/view?usp=drive_link" class="station-button">NAGAR</a>
+    <a href="https://drive.google.com/file/d/1DILHTA8Kkd-gqjy6efB2mse5dYyALGpv/view?usp=drive_link" class="station-button">BAIKUNTHPUR ROAD</a>
+    <a href="https://drive.google.com/file/d/1H__7wNw59hBVROYrAqOIRqqhT99A4DEM/view?usp=drive_link" class="station-button">KATORA</a>
+    <a href="https://drive.google.com/file/d/1mxGlPuhSNBXdEq1yGFkyO9PwvL0Hm0el/view?usp=drive_link" class="station-button">SHEOPRASAD NAGAR</a>
+    <a href="https://drive.google.com/file/d/1qSThYRmihvMvEeQlO7akGsSdbVAl851k/view?usp=drive_link" class="station-button">SURAJPUR ROAD</a>
+    <a href="https://drive.google.com/file/d/1x23Y4qLP4qwa6oJPzIM4Fa8oAslgorZA/view?usp=drive_link" class="station-button">KARONJI</a>
+    <a href="https://drive.google.com/file/d/1ijbeLlGmIybt_XFNuv_vOfUpUsd4SH72/view?usp=drive_link" class="station-button">BISHRAMPUR</a>
+    <a href="https://drive.google.com/file/d/1eOMDTSHLRTXe8-12TkFZ-Vh9hWKOLso6/view?usp=drive_link" class="station-button">KAMALPURGRAM</a>
+    <a href="https://drive.google.com/file/d/1iDgsuPLehdCwUxl0qcVsGHNwgZ-RBQVD/view?usp=drive_link" class="station-button">AMBIKAPUR</a>
+  </div>
+</body>
+</html>

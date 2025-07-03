@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yard Layout Video</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    .header {
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: #fff;
+      padding: 20px;
+      font-size: 28px;
+      font-weight: 700;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .back-button {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      background: #ff6f61;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 25px;
+      transition: background 0.3s ease, transform 0.2s ease;
+      font-size: 16px;
+    }
+
+    .back-button:hover {
+      background: #ff3d2e;
+      transform: translateY(-50%) scale(1.05);
+    }
+
+    .instruction {
+      background: #ffffff;
+      color: #e91e63;
+      font-size: 22px;
+      font-weight: 600;
+      margin: 20px auto;
+      padding: 15px 25px;
+      width: fit-content;
+      max-width: 90%;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 30px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .station-button {
+      background: linear-gradient(45deg, #00c4b4, #0288d1);
+      color: #fff;
+      padding: 15px;
+      font-size: 18px;
+      font-weight: 600;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    .station-button:hover {
+      background: linear-gradient(45deg, #0288d1, #00c4b4);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .station-button::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 300%;
+      height: 300%;
+      background: rgba(255, 255, 255, 0.15);
+      transform: translate(-50%, -50%) rotate(45deg);
+      transition: all 0.5s;
+      opacity: 0;
+    }
+
+    .station-button:hover::before {
+      opacity: 1;
+      width: 0;
+      height: 0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media screen and (max-width: 768px) {
+      .header {
+        font-size: 24px;
+        padding: 15px;
+      }
+
+      .back-button {
+        position: static;
+        transform: none;
+        margin: 10px auto 0;
+        display: block;
+        text-align: center;
+        width: fit-content;
+      }
+
+      .instruction {
+        font-size: 18px;
+        padding: 12px 20px;
+      }
+
+      .button-container {
+        gap: 15px;
+        padding: 20px;
+      }
+
+      .station-button {
+        font-size: 16px;
+        padding: 12px;
+        max-width: 250px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .header {
+        font-size: 20px;
+      }
+
+      .instruction {
+        font-size: 16px;
+      }
+
+      .station-button {
+        font-size: 14px;
+        padding: 10px;
+        max-width: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    YARD LAYOUT VIDEO
+    <a href="index.html" class="back-button">BACK TO HOME PAGE</a>
+  </div>
+
+  <div class="instruction">
+    आप जिस स्टेशन या यार्ड का वीडियो देखना चाहते हैं उस पर क्लिक करें
+  </div>
+
+  <div class="button-container">
+    <a href="https://drive.google.com/file/d/1fvaSn0J2xQNbWz9d_DjLNkjBQZATxzJW/view?usp=drive_link" class="station-button">BILASPUR</a>
+    <a href="https://drive.google.com/file/d/1xYfWDug0wT1ktET3jb5MJ9SgHH2aRTvU/view?usp=drive_link" class="station-button">SHAHDOL</a>
+    <a href="https://drive.google.com/file/d/1cxkfJ_lOO7ik7JoAvklihL9kmPAqSw9P/view?usp=drive_link" class="station-button">ANUPPUR</a>
+    <a href="https://drive.google.com/file/d/1E4LjbkhecAoAKxFSWG7b3M2g_2FmYO_F/view?usp=drive_link" class="station-button">BSP-JLW SLIDE SHOW</a>
+    <a href="https://drive.google.com/file/d/1IwRCSnuN8n_hicBHcbQypwyYM75f86PM/view?usp=drive_link" class="station-button">APR-ABKP SLIDE SHOW</a>
+  </div>
+</body>
+</html>
